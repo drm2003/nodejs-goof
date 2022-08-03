@@ -13,7 +13,7 @@ jobs:
           command: monitor
 
   sonarcloud:
-    need: snyk
+    needs: snyk
     name: SonarCloud
     runs-on: ubuntu-latest
     steps:
